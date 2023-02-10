@@ -12,7 +12,7 @@ services:
       - PGID=1000
       - TZ=Asia/Kolkata
       - SERVERPORT=53 #optional
-      - PEERS=2 #optional
+      - PEERS=3 #optional
       - PEERDNS=auto #optional
         #      - INTERNAL_SUBNET=10.13.13.0 #optional
       - ALLOWEDIPS=0.0.0.0/0 #optional
