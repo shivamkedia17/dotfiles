@@ -23,6 +23,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 # add plugins to .zshrc
 echo "add plugins to .zshrc,"
-vim ~/.zshrc -c "/plugins="
+vim ~/.zshrc -c "/plugins=" && source ~/.zshrc
 
 
