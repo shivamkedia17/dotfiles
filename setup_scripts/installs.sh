@@ -2,8 +2,8 @@
 
 # update all apps
 sudo apt update
-# Install tldr pages
-sudo apt install tldr
+# Install tldr pages, tree
+sudo apt install tldr tree
 
 # Install zsh
 sudo apt install zsh
