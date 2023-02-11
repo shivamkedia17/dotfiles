@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git clone https://github.com/shivamkedia17/dotfiles.git ~
+git clone https://github.com/shivamkedia17/dotfiles.git ~/dotfiles
 mkdir -p ~/docker/wireguard
 cp ~/dotfiles/setup_scripts/docker-compose.yml ~/docker/wireguard
 cd ~/docker/wireguard
