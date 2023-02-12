@@ -2,6 +2,7 @@
 
 # set locale
 sh ./setlocale.sh
+sudo timedatectl set-timezone Asia/Kolkata
 
 # update all apps
 sudo apt update
