@@ -1,9 +1,12 @@
 #!/bin/bash
 
+# set locale
+sh ./setlocale.sh
+
 # update all apps
 sudo apt update
 # Install tldr pages, tree
-sudo apt install tldr tree
+sudo apt install tldr tree gcc gdb
 
 # Install zsh
 sudo apt install zsh
