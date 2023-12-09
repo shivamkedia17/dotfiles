@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ejectKeywordEnabled</key>
+	<true/>
+	<key>emptytrashConfirm</key>
+	<true/>
+	<key>forcequitKeyword</key>
+	<string>fq</string>
+	<key>logoutConfirm</key>
+	<true/>
+	<key>quitKeyword</key>
+	<string>q</string>
+	<key>quitallKeyword</key>
+	<string>qall</string>
+	<key>volumedownKeyword</key>
+	<string>vdn</string>
+	<key>volumeupKeyword</key>
+	<string>vup</string>
+</dict>
+</plist>

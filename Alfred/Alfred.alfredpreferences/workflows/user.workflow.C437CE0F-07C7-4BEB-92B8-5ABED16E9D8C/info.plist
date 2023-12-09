@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>A7B58D73-1CDC-49C5-A77E-9022FF2BAEA4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BAC6BA9E-4EE7-424F-AFD1-023C42B0F734</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F2C0C2EC-5C3A-4A86-8553-2AD6BA7FDBEE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>BAC6BA9E-4EE7-424F-AFD1-023C42B0F734</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string></string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Open iCloud</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string>/System/Library/CoreServices/Finder.app/Contents/Applications/iCloud Drive.app</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>BAC6BA9E-4EE7-424F-AFD1-023C42B0F734</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>18</integer>
+				<key>hotmod</key>
+				<integer>1703936</integer>
+				<key>hotstring</key>
+				<string>1</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>A7B58D73-1CDC-49C5-A77E-9022FF2BAEA4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>icld</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>open iCloud</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>F2C0C2EC-5C3A-4A86-8553-2AD6BA7FDBEE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Use hotkeys to launch actions by pressing a key combination. You can connect one or more actions to be performed.
+
+Hotkeys are stripped on import, to ensure that they don't clash with your existing hotkeys, so double-click the object and set your own hotkey.
+
+A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character at least, but your best bet is to use slightly less common combinations (e.g. two modifiers) to avoid clashing with default OS X hotkeys or other apps on your Mac.</string>
+	<key>uidata</key>
+	<dict>
+		<key>A7B58D73-1CDC-49C5-A77E-9022FF2BAEA4</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>5. One hotkey can perform multiple actions. Connect it to more than one object to do this.</string>
+			<key>xpos</key>
+			<integer>100</integer>
+			<key>ypos</key>
+			<integer>185</integer>
+		</dict>
+		<key>BAC6BA9E-4EE7-424F-AFD1-023C42B0F734</key>
+		<dict>
+			<key>xpos</key>
+			<integer>495</integer>
+			<key>ypos</key>
+			<integer>185</integer>
+		</dict>
+		<key>F2C0C2EC-5C3A-4A86-8553-2AD6BA7FDBEE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>390</integer>
+			<key>ypos</key>
+			<integer>390</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>

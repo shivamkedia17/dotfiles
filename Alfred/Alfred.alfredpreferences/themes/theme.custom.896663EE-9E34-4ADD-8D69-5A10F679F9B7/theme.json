@@ -1,0 +1,64 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 12,
+        "colorSelected" : "#FFFFFFC4",
+        "font" : "System",
+        "color" : "#CACACAFF"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "System Bold",
+        "color" : "#FEFFFFA7"
+      },
+      "backgroundSelected" : "#0000007F",
+      "text" : {
+        "size" : 18,
+        "colorSelected" : "#FEFFFFFF",
+        "font" : "System",
+        "color" : "#FFFFFFFF"
+      },
+      "iconPaddingHorizontal" : 5,
+      "roundness" : 4,
+      "paddingVertical" : 5,
+      "iconSize" : 40
+    },
+    "search" : {
+      "backgroundSelected" : "#91919164",
+      "paddingHorizontal" : 8,
+      "spacing" : 4,
+      "text" : {
+        "size" : 37,
+        "colorSelected" : "#FEFFFFFF",
+        "font" : "System",
+        "color" : "#E7E7E7FF"
+      },
+      "background" : "#00000000",
+      "roundness" : 6,
+      "paddingVertical" : 3
+    },
+    "window" : {
+      "color" : "#00000088",
+      "paddingHorizontal" : 3,
+      "width" : 559,
+      "borderPadding" : 0,
+      "borderColor" : "#0000007F",
+      "blur" : 0,
+      "roundness" : 9,
+      "paddingVertical" : 4
+    },
+    "credit" : "Mewtwo",
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#CACACAFF",
+      "thickness" : 3
+    },
+    "name" : "Custom Dark Transparent"
+  }
+}

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>connections</key>
+	<dict>
+		<key>A7B58D73-1CDC-49C5-A77E-9022FF2BAEA4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D5F8FB0C-66A7-4CFE-AAE2-4F4985DAFF01</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BFA37409-99AE-4F7D-A6E4-42260DC225A7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D5F8FB0C-66A7-4CFE-AAE2-4F4985DAFF01</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D5F8FB0C-66A7-4CFE-AAE2-4F4985DAFF01</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E79AC458-E3D5-40B0-9419-EE59BA4377CA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string></string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Open Mail</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>20</integer>
+				<key>hotmod</key>
+				<integer>1703936</integer>
+				<key>hotstring</key>
+				<string>3</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>A7B58D73-1CDC-49C5-A77E-9022FF2BAEA4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/System/Applications/Mail.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>D5F8FB0C-66A7-4CFE-AAE2-4F4985DAFF01</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+tell application "Mail"	activate	tell application "System Events"		keystroke "f" using {option down, command down}		keystroke q		keystroke return	end tellend tell
+end alfred_script</string>
+				<key>cachescript</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>E79AC458-E3D5-40B0-9419-EE59BA4377CA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>mail</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Search Mail for "..."</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>BFA37409-99AE-4F7D-A6E4-42260DC225A7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Use hotkeys to launch actions by pressing a key combination. You can connect one or more actions to be performed.
+
+Hotkeys are stripped on import, to ensure that they don't clash with your existing hotkeys, so double-click the object and set your own hotkey.
+
+A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character at least, but your best bet is to use slightly less common combinations (e.g. two modifiers) to avoid clashing with default OS X hotkeys or other apps on your Mac.</string>
+	<key>uidata</key>
+	<dict>
+		<key>A7B58D73-1CDC-49C5-A77E-9022FF2BAEA4</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>5. One hotkey can perform multiple actions. Connect it to more than one object to do this.</string>
+			<key>xpos</key>
+			<integer>125</integer>
+			<key>ypos</key>
+			<integer>155</integer>
+		</dict>
+		<key>BFA37409-99AE-4F7D-A6E4-42260DC225A7</key>
+		<dict>
+			<key>xpos</key>
+			<integer>115</integer>
+			<key>ypos</key>
+			<integer>405</integer>
+		</dict>
+		<key>D5F8FB0C-66A7-4CFE-AAE2-4F4985DAFF01</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>note</key>
+			<string>7. This Action launches Apps/Files; Mail in this case.</string>
+			<key>xpos</key>
+			<integer>470</integer>
+			<key>ypos</key>
+			<integer>160</integer>
+		</dict>
+		<key>E79AC458-E3D5-40B0-9419-EE59BA4377CA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>680</integer>
+			<key>ypos</key>
+			<integer>370</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>

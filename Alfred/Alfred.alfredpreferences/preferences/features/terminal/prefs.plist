@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>application</key>
+	<integer>1</integer>
+	<key>custom</key>
+	<string>on hyper_new()
+	set _running to (application "Kitty" is running)
+	tell application "Kitty" to activate
+	tell application "System Events"
+		log (name of first application process whose frontmost is true)
+		repeat while (name of first application process whose frontmost is true) is not "Kitty"
+			delay 0.05
+		end repeat
+
+		set _kitty to first application process whose frontmost is true
+		-- If Kitty was running, create a new tab to run command
+		if _running then keystroke "t" using {command down}
+		delay 0.25
+
+	end tell
+end hyper_new
+
+on alfred_script(q)
+	my hyper_new()
+	set the clipboard to q
+	tell application "System Events"
+		keystroke "v" using {command down}
+		delay 0.2
+		key code 36
+	end tell
+end alfred_script</string>
+</dict>
+</plist>
