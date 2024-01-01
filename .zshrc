@@ -105,6 +105,8 @@ source $ZSH/oh-my-zsh.sh
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
 # -----------------------
 
+# export TERM=xterm-256color
+
 # Environment variables to 
 DRIP=178.128.93.169
 DROPLET_ROOT=root@$DRIP
@@ -130,8 +132,9 @@ QEMU='/opt/homebrew/Cellar/qemu/7.2.0/bin'
 export PYTHON='/usr/local/bin/python2'
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$PATH:$HOME/.cargo/bin"
-
 export PATH="/opt/homebrew/opt/openssl@3/bin:$PATH"
+export PATH="$PATH:$HOME/Library/Python/3.11/bin"
+export PATH="$PATH:/opt/homebrew/lib/python3.11"
 
 # sem 5
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/15/bin"
@@ -139,6 +142,7 @@ alias pgres="psql -p5432 postgres"
 alias icld="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
 alias dbms="icld; cd Sem\ 5/DBMS"
 alias pldi="icld; cd Sem\ 5/PLDI"
+alias rusti="icld; cd Sem\ 5/rust_ism"
 alias networks="icld; cd Sem\ 5/Networks"
 alias alg="icld; cd Sem\ 5/Algebra\ 1"
 alias iml="icld; cd Sem\ 5/Machine\ Learning"
@@ -147,11 +151,12 @@ alias iml="icld; cd Sem\ 5/Machine\ Learning"
 alias gcc='gcc-13'
 alias g++='g++-13'
 
-# env for flex
+# env for flex and bison
 export PATH="/opt/homebrew/opt/flex/bin:$PATH"
 export PATH="/opt/homebrew/opt/bison/bin:$PATH"
 
-export LDFLAGS="-L/opt/homebrew/opt/flex/lib"
-export LDFLAGS="-L/opt/homebrew/opt/bison/lib"
+export LDFLAGS="-L/opt/homebrew/opt/flex/lib -L/opt/homebrew/opt/bison/lib"
+export CFLAGS="-I/opt/homebrew/opt/flex/include"
 export CPPFLAGS="-I/opt/homebrew/opt/flex/include"
 
+alias ncpt='open -n -a /Applications/Cisco\ Packet\ Tracer\ 8.2.1/Cisco\ Packet\ Tracer\ 8.2.1.app/'
