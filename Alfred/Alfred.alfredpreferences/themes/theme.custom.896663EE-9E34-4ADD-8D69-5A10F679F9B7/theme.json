@@ -28,7 +28,7 @@
     },
     "search" : {
       "backgroundSelected" : "#91919164",
-      "paddingHorizontal" : 8,
+      "paddingHorizontal" : 5,
       "spacing" : 4,
       "text" : {
         "size" : 37,
@@ -38,7 +38,7 @@
       },
       "background" : "#00000000",
       "roundness" : 6,
-      "paddingVertical" : 3
+      "paddingVertical" : 0
     },
     "window" : {
       "color" : "#00000088",
