@@ -24,14 +24,21 @@ source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZSH_PLUGINS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH_PLUGINS/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
 
 #----------------------------------------
 ### SHELL OPTIONS
 setopt autocd
 zstyle ':completion:*' menu select matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
 autoload -U compinit && compinit
+
+bindkey "^[[A" history-substring-search-up
+bindkey "^[[B" history-substring-search-down
+
+bindkey "^U" backward-kill-line
+
+# bindkey "^[[A" history-beginning-search-backward
+# bindkey "^[[B" history-beginning-search-forward
 
 #----------------------------------------
 ### ALIASES
