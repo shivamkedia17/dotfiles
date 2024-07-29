@@ -588,7 +588,7 @@
 	<key>description</key>
 	<string>List File Stream contents from Google Drive</string>
 	<key>disabled</key>
-	<false/>
+	<true/>
 	<key>name</key>
 	<string>Google Drive</string>
 	<key>objects</key>

@@ -9,8 +9,5 @@ require('lspconfig').typst_lsp.setup{
         }
 }
 require('lspconfig').denols.setup {}
-require('lspconfig').pylyzer.setup {}
 require('lspconfig').clangd.setup {}
-
-
 

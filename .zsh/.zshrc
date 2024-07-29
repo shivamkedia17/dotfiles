@@ -64,11 +64,6 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 ## Mac Specific
 alias icld='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'
-alias grp='icld; cd Sem6/Graphics'
-alias foi='icld; cd Sem6/Investing'
-alias toc='icld; cd Sem6/TOC'
-alias csp='icld; cd Sem6/CSP'
-alias mksp='icld; cd Sem6/makers'
 
 #----------------------------------------
 
@@ -82,11 +77,19 @@ PATH="$PATH:/Applications/kitty.app/Contents/MacOS:$HOME/.cargo/bin"
 PATH="$PATH:$HOME/.cargo/env"
 
 PATH="$PATH:/usr/local/smlnj/bin"
-PATH="$PATH:$HOME/builds/typst-lsp/target/release"
+PATH="$PATH:/Applications/Postgres.app/Contents/Versions/16/bin"
 
 export PATH
+
+export LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@3/lib/pkgconfig"
+export RUSTFLAGS="-L/opt/homebrew/opt/libpq/lib"
 
 #----------------------------------------
 ## OTHERS
 ssh-add ~/.ssh/github
 export TERM='xterm-256color'
+
+# Created by `pipx` on 2024-06-01 06:26:11
+export PATH="$PATH:/Users/shivoom/.local/bin"

@@ -6,19 +6,6 @@
 	<string></string>
 	<key>connections</key>
 	<dict>
-		<key>A7B58D73-1CDC-49C5-A77E-9022FF2BAEA4</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>BAC6BA9E-4EE7-424F-AFD1-023C42B0F734</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>F2C0C2EC-5C3A-4A86-8553-2AD6BA7FDBEE</key>
 		<array>
 			<dict>
@@ -61,37 +48,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>18</integer>
-				<key>hotmod</key>
-				<integer>1703936</integer>
-				<key>hotstring</key>
-				<string>1</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>A7B58D73-1CDC-49C5-A77E-9022FF2BAEA4</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
@@ -119,32 +75,23 @@ Hotkeys are stripped on import, to ensure that they don't clash with your existi
 A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character at least, but your best bet is to use slightly less common combinations (e.g. two modifiers) to avoid clashing with default OS X hotkeys or other apps on your Mac.</string>
 	<key>uidata</key>
 	<dict>
-		<key>A7B58D73-1CDC-49C5-A77E-9022FF2BAEA4</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>note</key>
-			<string>5. One hotkey can perform multiple actions. Connect it to more than one object to do this.</string>
-			<key>xpos</key>
-			<integer>100</integer>
-			<key>ypos</key>
-			<integer>185</integer>
-		</dict>
 		<key>BAC6BA9E-4EE7-424F-AFD1-023C42B0F734</key>
 		<dict>
 			<key>xpos</key>
-			<integer>495</integer>
+			<real>495</real>
 			<key>ypos</key>
-			<integer>185</integer>
+			<real>185</real>
 		</dict>
 		<key>F2C0C2EC-5C3A-4A86-8553-2AD6BA7FDBEE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>390</integer>
+			<real>390</real>
 			<key>ypos</key>
-			<integer>390</integer>
+			<real>390</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>version</key>
 	<string>1.0</string>
 	<key>webaddress</key>

@@ -6,24 +6,11 @@
 	<string></string>
 	<key>connections</key>
 	<dict>
-		<key>3118BE2A-FEEA-4B61-885B-0776BEAD2556</key>
+		<key>E42E5E1E-84F5-4297-9910-ABCA4A57F7B6</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>EAE78589-7C21-49D4-B4C2-865BCDDE765D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>D0D170CF-42DF-4377-8032-B69D1C04AE97</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>EAE78589-7C21-49D4-B4C2-865BCDDE765D</string>
+				<string>A40C8ECF-E5D7-476D-A63A-0D1D14135FC1</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -40,7 +27,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Open Spotify</string>
+	<string>Open Chromium</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -55,11 +42,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>29</integer>
+				<integer>28</integer>
 				<key>hotmod</key>
 				<integer>1835008</integer>
 				<key>hotstring</key>
-				<string>0</string>
+				<string>8</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -70,7 +57,7 @@
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>D0D170CF-42DF-4377-8032-B69D1C04AE97</string>
+			<string>E42E5E1E-84F5-4297-9910-ABCA4A57F7B6</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -79,7 +66,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/Spotify.app</string>
+					<string>/Applications/Chromium.app</string>
 				</array>
 				<key>toggle</key>
 				<true/>
@@ -87,66 +74,28 @@
 			<key>type</key>
 			<string>alfred.workflow.action.launchfiles</string>
 			<key>uid</key>
-			<string>EAE78589-7C21-49D4-B4C2-865BCDDE765D</string>
+			<string>A40C8ECF-E5D7-476D-A63A-0D1D14135FC1</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>106</integer>
-				<key>hotmod</key>
-				<integer>8388608</integer>
-				<key>hotstring</key>
-				<string>F16</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>3118BE2A-FEEA-4B61-885B-0776BEAD2556</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>3118BE2A-FEEA-4B61-885B-0776BEAD2556</key>
+		<key>A40C8ECF-E5D7-476D-A63A-0D1D14135FC1</key>
 		<dict>
 			<key>xpos</key>
-			<real>90</real>
+			<real>470</real>
 			<key>ypos</key>
-			<real>195</real>
+			<real>250</real>
 		</dict>
-		<key>D0D170CF-42DF-4377-8032-B69D1C04AE97</key>
+		<key>E42E5E1E-84F5-4297-9910-ABCA4A57F7B6</key>
 		<dict>
 			<key>xpos</key>
-			<real>50</real>
+			<real>290</real>
 			<key>ypos</key>
-			<real>50</real>
-		</dict>
-		<key>EAE78589-7C21-49D4-B4C2-865BCDDE765D</key>
-		<dict>
-			<key>xpos</key>
-			<real>285</real>
-			<key>ypos</key>
-			<real>110</real>
+			<real>245</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>

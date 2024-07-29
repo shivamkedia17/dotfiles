@@ -11,7 +11,7 @@ fi
 
 
 # install the followings casks (apps)
-casks=(kitty battery tiles qlstephen qlmarkdown monitorcontrol hiddenbar finicky appcleaner firefox duckduckgo spotify google-drive)
+casks=(kitty battery tiles qlstephen qlmarkdown monitorcontrol hiddenbar finicky appcleaner firefox duckduckgo spotify google-drive obsidian docker zoom wireshark iina)
 
 for cask in "${casks[@]}"
 do
@@ -20,7 +20,7 @@ done
 
 
 # install the following formulae and dependencies
-formulae=(nmap tldr tree rustup python3 pandoc typst)
+formulae=(nmap tldr tree rustup python3 golang pandoc typst) 
 for f in "${formulae[@]}"
 do
     brew install $f;

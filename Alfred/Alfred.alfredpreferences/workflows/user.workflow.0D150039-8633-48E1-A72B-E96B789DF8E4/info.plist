@@ -69,7 +69,7 @@
 					<string>/Applications/Safari.app</string>
 				</array>
 				<key>toggle</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.launchfiles</string>
@@ -94,9 +94,9 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 			<key>note</key>
 			<string>5. One hotkey can perform multiple actions. Connect it to more than one object to do this.</string>
 			<key>xpos</key>
-			<integer>145</integer>
+			<real>145</real>
 			<key>ypos</key>
-			<integer>145</integer>
+			<real>145</real>
 		</dict>
 		<key>D5F8FB0C-66A7-4CFE-AAE2-4F4985DAFF01</key>
 		<dict>
@@ -105,11 +105,13 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 			<key>note</key>
 			<string>7. This Action launches Apps/Files; Safari in this case.</string>
 			<key>xpos</key>
-			<integer>515</integer>
+			<real>515</real>
 			<key>ypos</key>
-			<integer>165</integer>
+			<real>165</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>version</key>
 	<string>1.0</string>
 	<key>webaddress</key>
