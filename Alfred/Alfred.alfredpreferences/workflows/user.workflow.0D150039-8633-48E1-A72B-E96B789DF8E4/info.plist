@@ -10,7 +10,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D5F8FB0C-66A7-4CFE-AAE2-4F4985DAFF01</string>
+				<string>061F426D-DE65-4B0C-9C9D-8DBFF4069EA4</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -27,7 +27,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Open Safari</string>
+	<string>Open Orion</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -66,7 +66,7 @@
 			<dict>
 				<key>paths</key>
 				<array>
-					<string>/Applications/Safari.app</string>
+					<string>/Applications/Orion.app</string>
 				</array>
 				<key>toggle</key>
 				<true/>
@@ -74,7 +74,7 @@
 			<key>type</key>
 			<string>alfred.workflow.action.launchfiles</string>
 			<key>uid</key>
-			<string>D5F8FB0C-66A7-4CFE-AAE2-4F4985DAFF01</string>
+			<string>061F426D-DE65-4B0C-9C9D-8DBFF4069EA4</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -87,6 +87,13 @@ Hotkeys are stripped on import, to ensure that they don't clash with your existi
 A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character at least, but your best bet is to use slightly less common combinations (e.g. two modifiers) to avoid clashing with default OS X hotkeys or other apps on your Mac.</string>
 	<key>uidata</key>
 	<dict>
+		<key>061F426D-DE65-4B0C-9C9D-8DBFF4069EA4</key>
+		<dict>
+			<key>xpos</key>
+			<real>415</real>
+			<key>ypos</key>
+			<real>195</real>
+		</dict>
 		<key>A7B58D73-1CDC-49C5-A77E-9022FF2BAEA4</key>
 		<dict>
 			<key>colorindex</key>
@@ -97,17 +104,6 @@ A hotkey needs to contain a modifier (Cmd, Ctrl or Alt) and a keyboard character
 			<real>145</real>
 			<key>ypos</key>
 			<real>145</real>
-		</dict>
-		<key>D5F8FB0C-66A7-4CFE-AAE2-4F4985DAFF01</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>note</key>
-			<string>7. This Action launches Apps/Files; Safari in this case.</string>
-			<key>xpos</key>
-			<real>515</real>
-			<key>ypos</key>
-			<real>165</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>

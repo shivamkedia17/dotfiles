@@ -64,6 +64,11 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 ## Mac Specific
 alias icld='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'
+alias dpcs='cd ~/Documents/dpcs-code'
+alias suban='cd ~/Documents/suban-code'
+alias slaps='cd ~/Documents/SLAps-code'
+
+alias dpcsvm='ssh shivam.kedia_asp25@ics.ashoka.edu.in'
 
 #----------------------------------------
 
@@ -79,6 +84,8 @@ PATH="$PATH:$HOME/.cargo/env"
 PATH="$PATH:/usr/local/smlnj/bin"
 PATH="$PATH:/Applications/Postgres.app/Contents/Versions/16/bin"
 
+PATH="$PATH:/usr/local/texlive/2024basic/bin/universal-darwin"
+
 export PATH
 
 export LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib"
@@ -89,6 +96,9 @@ export RUSTFLAGS="-L/opt/homebrew/opt/libpq/lib"
 #----------------------------------------
 ## OTHERS
 ssh-add ~/.ssh/github
+ssh-add ~/.ssh/ashoka-vm
+ssh-add ~/.ssh/droplet
+
 export TERM='xterm-256color'
 
 # Created by `pipx` on 2024-06-01 06:26:11

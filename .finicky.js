@@ -2,14 +2,20 @@
 // Save as ~/.finicky.js
 
 module.exports = {
-        defaultBrowser: "Firefox",
+        defaultBrowser: "Orion",
         handlers: [
-                {
-                	match: ({ url }) => url.host.endsWith("whatsapp.com"),
-                	browser: {
-                		name: "Safari",
-                	},
-                },
+                // {
+                // 	match: ({ url }) => url.host.endsWith("youtube.com"),
+                // 	browser: {
+                // 		name: "Firefox",
+                // 	},
+                // },
+                // {
+                // 	match: ({ url }) => url.host.endsWith("notion.so") || url.host.endsWith("whatsapp.com"),
+                // 	browser: {
+                // 		name: "Safari",
+                // 	},
+                // },
                 {
                         match: ({ url }) => url.host.endsWith("openai.com"),
                         browser: {
