@@ -20,7 +20,7 @@ done
 
 
 # install the following formulae and dependencies
-formulae=(nmap tldr tree rustup python3 golang pandoc typst) 
+formulae=(nmap tldr tree rustup python3 golang pandoc typst font-iosevka) 
 for f in "${formulae[@]}"
 do
     brew install $f;

@@ -15,3 +15,5 @@ opt.hlsearch = false
 
 -- [[ Whitespace ]]
 opt.expandtab = true
+opt.tabstop = 4        -- Number of spaces that a <Tab> counts for
+opt.shiftwidth = 4     -- Number of spaces to use for each step of (auto)indent

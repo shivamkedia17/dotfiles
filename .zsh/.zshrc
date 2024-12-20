@@ -59,6 +59,12 @@ alias gco='git checkout'
 alias gb='git branch'
 alias gcmsg='git commit -m'
 
+## GCC
+alias gcc='/opt/homebrew/bin/gcc-14'
+alias gcc-ar='/opt/homebrew/bin/gcc-ar-14'
+alias gcc-nm='/opt/homebrew/bin/gcc-nm-14'
+alias gcc-ranlib='/opt/homebrew/bin/gcc-ranlib-14'
+
 ## Dotfiles
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
@@ -66,7 +72,8 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 alias icld='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'
 alias dpcs='cd ~/Documents/dpcs-code'
 alias suban='cd ~/Documents/suban-code'
-alias slaps='cd ~/Documents/SLAps-code'
+alias lipika='cd ~/Documents/ai-lipika'
+alias capstone='cd ~/projects/capstone'
 
 alias dpcsvm='ssh shivam.kedia_asp25@ics.ashoka.edu.in'
 
@@ -88,8 +95,8 @@ PATH="$PATH:/usr/local/texlive/2024basic/bin/universal-darwin"
 
 export PATH
 
-export LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include"
+export LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib -L/opt/homebrew/Cellar/fftw/3.3.10_1/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include -I/opt/homebrew/Cellar/fftw/3.3.10_1/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@3/lib/pkgconfig"
 export RUSTFLAGS="-L/opt/homebrew/opt/libpq/lib"
 

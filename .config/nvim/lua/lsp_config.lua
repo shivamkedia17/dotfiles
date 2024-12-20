@@ -10,4 +10,19 @@ require('lspconfig').typst_lsp.setup{
 }
 require('lspconfig').denols.setup {}
 require('lspconfig').clangd.setup {}
+require('lspconfig').gopls.setup({
+    cmd = { "gopls" },
+    root_dir = function(fname)
+        return require('lspconfig').util.root_pattern("go.mod")(fname) or vim.loop.os_homedir()
+    end,
+    settings = {
+        gopls = {
+            analyses = {
+                unusedparams = true,
+                staticcheck = true,
+            },
+            staticcheck = true,
+        },
+    },
+})
 
