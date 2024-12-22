@@ -1,5 +1,9 @@
 dotfiles
 .DS_Store
+*/zed/conversations
+*/zed/prompts
+*/zed/embeddings
+*/zed/.tmp*
 karabiner/automatic_backups
 kitty/kitty-themes
 zsh_history

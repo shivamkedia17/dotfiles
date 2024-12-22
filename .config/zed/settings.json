@@ -12,9 +12,7 @@
         "C": {
             "show_inline_completions": false
         },
-        "Rust": {
-            "show_inline_completions": false
-        },
+        "Rust": {},
         "JavaScript": {
             "tab_size": 2
         },
@@ -24,11 +22,29 @@
         "JSON": {
             "tab_size": 2
         },
-        "TSX": {
-            "tab_size": 2
-        },
         "TypeScript": {
-            "tab_size": 2
+            "tab_size": 2,
+            "language_servers": [
+                "deno",
+                "!typescript-language-server",
+                "!vtsls",
+                "!eslint"
+            ],
+            "formatter": "language_server"
+        },
+        "TSX": {
+            "tab_size": 2,
+            "language_servers": [
+                "deno",
+                "!typescript-language-server",
+                "!vtsls",
+                "!eslint"
+            ],
+            "formatter": "language_server"
+        },
+        "Go": {
+            "tab_size": 4,
+            "language_servers": ["gopls", "!golangci-lint"]
         },
         "Python": {
             "language_servers": ["ruff", "pyright", "!pylsp"],
@@ -50,6 +66,7 @@
         }
     },
     "lsp": {
+        // Python
         "pyright": {
             "settings": {
                 "python": {
@@ -57,6 +74,7 @@
                 }
             }
         },
+        // Python Formatter
         "ruff": {
             "initialization_options": {
                 "settings": {
@@ -68,8 +86,32 @@
                     "showSyntaxErrors": false
                 }
             }
+        },
+
+        // Deno for TS
+        "deno": {
+            "settings": {
+                "deno": {
+                    "enable": true
+                }
+            }
+        },
+        "golangci-lint": {
+            "initialization_options": {
+                "command": [
+                    "golangci-lint",
+                    "run",
+                    "--enable-all",
+                    "--disable",
+                    "lll",
+                    "--out-format",
+                    "json",
+                    "--issues-exit-code=1"
+                ]
+            }
         }
     },
+
     "features": {
         "inline_completion_provider": "none"
     },
@@ -93,5 +135,16 @@
     "telemetry": {
         "diagnostics": true,
         "metrics": false
+    },
+    "auto_install_extensions": {
+        "deno": true,
+        "html": true,
+        "modest-dark": true,
+        "ruff": true,
+        "dockerfile": true,
+        "golangci-lint": true,
+        "sql": true,
+        "toml": true,
+        "make": true
     }
 }

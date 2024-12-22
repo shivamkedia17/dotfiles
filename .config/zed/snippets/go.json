@@ -1,0 +1,21 @@
+{
+ "Error Check": {
+    "prefix": "iferr",
+    "body": [
+        "if err != nil {",
+        "    return ${1:nil}, ${2:err}",
+        "}"
+    ],
+    "description": "Error Check"
+ },
+ "Nil Check": {
+    "prefix": "ifnil",
+    "body": [
+        "if ${1:value} == nil {",
+        "    return ${2:default_value}, ${3:nil}",
+        "}"
+    ],
+    "description": "Nil Check"
+  }
+}
+

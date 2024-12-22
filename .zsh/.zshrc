@@ -92,6 +92,7 @@ PATH="$PATH:/usr/local/smlnj/bin"
 PATH="$PATH:/Applications/Postgres.app/Contents/Versions/16/bin"
 
 PATH="$PATH:/usr/local/texlive/2024basic/bin/universal-darwin"
+PATH="$PATH:$HOME/go/bin"
 
 export PATH
 
