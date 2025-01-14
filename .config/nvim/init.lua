@@ -1,17 +1,36 @@
-local cmd = vim.cmd
 
-cmd.colorscheme 'midnight'
+
+--------------------------------------------------------------------------------
+-- [[ Plugins ]]
+
+local Plug = vim.fn['plug#']
 local api = vim.api
-local opt = { noremap=true, silent=true }
 
-api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opt)
-api.nvim_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opt)
-api.nvim_set_keymap('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opt)
+vim.call('plug#begin')
+
+Plug('williamboman/mason.nvim')
+Plug('williamboman/mason-lspconfig.nvim')
+Plug('neovim/nvim-lspconfig')
+Plug('tpope/vim-surround')
+Plug('tpope/vim-commentary')
+Plug('kaarmu/typst.vim')
+Plug('dasupradyumna/midnight.nvim')
+
+vim.call('plug#end')
+
 
 require('mason').setup()
 require('mason-lspconfig').setup()
 
-require('lspconfig').lua_ls.setup {}
+require('lspconfig').lua_ls.setup {
+  settings = {
+    Lua = {
+      diagnostics = {
+        globals = {'vim'},  -- Recognize 'vim' as a global variable
+      },
+    },
+  },
+}
 require('lspconfig').rust_analyzer.setup {}
 require('lspconfig').denols.setup {}
 require('lspconfig').clangd.setup {}
@@ -31,7 +50,10 @@ require('lspconfig').gopls.setup({
     },
 })
 
--- [[ opts.lua ]]
+
+
+--------------------------------------------------------------------------------
+-- [[ Options ]]
 
 local opt = vim.opt
 
@@ -54,23 +76,23 @@ opt.smartindent = true
 
 
 opt.scrolloff=8
--- Hi
 
-local Plug = vim.fn['plug#']
+--------------------------------------------------------------------------------
 
-vim.call('plug#begin')
+api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opt)
+api.nvim_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opt)
+api.nvim_set_keymap('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opt)
 
-Plug('williamboman/mason.nvim')
-Plug('williamboman/mason-lspconfig.nvim')
-Plug('neovim/nvim-lspconfig')
-Plug('tpope/vim-surround')
-Plug('tpope/vim-commentary')
-Plug('kaarmu/typst.vim')
-Plug('dasupradyumna/midnight.nvim')
 
-vim.call('plug#end')
---[[ vars.lua ]]
+--------------------------------------------------------------------------------
+--[[ Global Vim Variables]]
 
 local g = vim.g
+
+vim.cmd.colorscheme 'midnight'
+
+
 g.t_co = 256
 g.background = "dark"
+
+--------------------------------------------------------------------------------
