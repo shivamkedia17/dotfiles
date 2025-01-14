@@ -74,6 +74,7 @@ alias dpcs='cd ~/Documents/dpcs-code'
 alias suban='cd ~/Documents/suban-code'
 alias lipika='cd ~/Documents/ai-lipika'
 alias capstone='cd ~/projects/capstone'
+alias prj='cd ~/projects'
 
 alias dpcsvm='ssh shivam.kedia_asp25@ics.ashoka.edu.in'
 
@@ -93,6 +94,7 @@ PATH="$PATH:/Applications/Postgres.app/Contents/Versions/16/bin"
 
 PATH="$PATH:/usr/local/texlive/2024basic/bin/universal-darwin"
 PATH="$PATH:$HOME/go/bin"
+PATH="$PATH:$HOME/.deno/bin"
 
 export PATH
 
