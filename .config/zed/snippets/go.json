@@ -8,6 +8,15 @@
     ],
     "description": "Error Check"
  },
+ "Test Error Check": {
+    "prefix": "ifterr",
+    "body": [
+        "if err != nil {",
+        "    t.Errorf(\"${1:Unexpected Error: %v}\", err)",
+        "}"
+    ],
+    "description": "Error Check"
+ },
  "Nil Check": {
     "prefix": "ifnil",
     "body": [
