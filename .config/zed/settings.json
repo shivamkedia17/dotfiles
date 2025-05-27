@@ -7,11 +7,35 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+    "ssh_connections": [
+    {
+      "host": "34.131.193.99",
+      "username": "shivamkedia69",
+      "projects": [
+        {
+          "paths": [
+            "/home/shivamkedia69"
+          ]
+        }
+      ]
+    }
+  ],
+    "outline_panel": {
+        "dock": "right"
+    },
+    "project_panel": {
+        "dock": "left"
+    },
+    "show_edit_predictions": false,
+    "edit_predictions": {
+        "disabled_globs": [".env", "doubly_linked_list.c"]
+    },
     "tab_size": 4,
     "languages": {
         "C": {
+            "tab_size": 2,
             "language_servers": ["clangd"],
-            "show_inline_completions": false,
+            "show_edit_predictions": false,
             "formatter": "language_server",
             "format_on_save": "on"
         },
@@ -22,7 +46,10 @@
                 "!deno",
                 "!vtsls",
                 "typescript-language-server"
-            ]
+            ],
+            "code_actions_on_format": {
+                "source.fixAll.eslint": true
+            }
         },
         "JSDoc": {
             "tab_size": 2
@@ -37,16 +64,22 @@
                 "!vtsls",
                 "typescript-language-server"
             ],
-            "formatter": "language_server"
+            "code_actions_on_format": {
+                "source.fixAll.eslint": true
+            },
+            "formatter": "prettier"
         },
         "TSX": {
             "tab_size": 2,
             "language_servers": [
-                "deno",
+                "!deno",
                 "!vtsls",
                 "typescript-language-server"
             ],
-            "formatter": "language_server"
+            "code_actions_on_format": {
+                "source.fixAll.eslint": true
+            },
+            "formatter": "prettier"
         },
         "Go": {
             "language_servers": ["gopls", "!golangci-lint"]
@@ -117,6 +150,14 @@
             }
         },
 
+        "eslint": {
+            "settings": {
+                "codeActionOnSave": {
+                    "rules": ["import/order"]
+                }
+            }
+        },
+
         // TS
         "typescript-language-server": {
             "initialization_options": {
@@ -142,14 +183,55 @@
     },
 
     "features": {
-        "inline_completion_provider": "none"
+        "edit_prediction_provider": "none"
     },
-    "assistant": {
+    "agent": {
+        "always_allow_tool_actions": true,
+        "inline_assistant_model": {
+            "provider": "copilot_chat",
+            "model": "claude-3.7-sonnet"
+        },
+        "default_profile": "ask",
         "default_model": {
             "provider": "copilot_chat",
-            "model": "gpt-4o"
+            "model": "claude-3.7-sonnet"
         },
         "version": "2"
+    },
+    "language_models": {
+        "ollama": {
+            "available_models": [
+                {
+                    "name": "qwen2.5-coder:1.5b",
+                    "display_name": "Qwen 2.5 Coder 1.5",
+                    "max_tokens": 32768,
+                    "keep_alive": "400s",
+                    "supports_tools": false
+                },
+                {
+                    "name": "deepseek-r1:1.5b",
+                    "display_name": "DeepSeek R1 1.5",
+                    // "max_tokens": 32768,
+                    "max_tokens": 65536,
+                    "keep_alive": "400s",
+                    "supports_tools": false
+                },
+                {
+                    "name": "qwen2.5:7b",
+                    "display_name": "Qwen 2.5 7B",
+                    "max_tokens": 32768,
+                    "keep_alive": "400s",
+                    "supports_tools": false
+                },
+                {
+                    "name": "qwen2.5:3b",
+                    "display_name": "Qwen 2.5 3B",
+                    "max_tokens": 32768,
+                    "keep_alive": "400s",
+                    "supports_tools": false
+                }
+            ]
+        }
     },
 
     "ui_font_family": "Product Sans",
@@ -163,7 +245,7 @@
         "dock": "right"
     },
     "telemetry": {
-        "diagnostics": true,
+        "diagnostics": false,
         "metrics": false
     },
     "auto_install_extensions": {

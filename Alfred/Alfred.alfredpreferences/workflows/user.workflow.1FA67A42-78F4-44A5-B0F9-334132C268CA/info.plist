@@ -136,7 +136,7 @@ echo "Created '$filename'"</string>
 				<key>filetypes</key>
 				<array/>
 				<key>name</key>
-				<string>Compress to Zip</string>
+				<string>Compress</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.action</string>

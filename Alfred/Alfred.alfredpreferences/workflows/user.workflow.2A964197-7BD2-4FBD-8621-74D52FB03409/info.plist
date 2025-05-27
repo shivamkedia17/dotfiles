@@ -6,11 +6,11 @@
 	<string></string>
 	<key>connections</key>
 	<dict>
-		<key>EBA956F8-6D20-40F9-A598-6FB590F0D8EF</key>
+		<key>3141A027-C4A7-4025-9165-5A5656440A7D</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C6F8500C-D755-4BBC-90A1-19895777D69C</string>
+				<string>549474FD-7804-42C3-A292-DF5F23A685E4</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -23,42 +23,60 @@
 	<key>createdby</key>
 	<string></string>
 	<key>description</key>
-	<string>Open this in neovide</string>
+	<string>using hotkey</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Open w neovide</string>
+	<string>Open File in Zed</string>
 	<key>objects</key>
 	<array>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
 				<integer>1</integer>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>open with neovide</string>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>105</integer>
+				<key>hotmod</key>
+				<integer>8388608</integer>
+				<key>hotstring</key>
+				<string>F13</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedApps</key>
+				<array>
+					<string>com.apple.finder</string>
+				</array>
+				<key>relatedAppsMode</key>
+				<integer>1</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
+			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>EBA956F8-6D20-40F9-A598-6FB590F0D8EF</string>
+			<string>3141A027-C4A7-4025-9165-5A5656440A7D</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
 				<key>openwith</key>
-				<string>/System/Volumes/Data/Applications/Neovide.app</string>
+				<string>/Applications/Zed.app</string>
 				<key>sourcefile</key>
 				<string></string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
-			<string>C6F8500C-D755-4BBC-90A1-19895777D69C</string>
+			<string>549474FD-7804-42C3-A292-DF5F23A685E4</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -67,19 +85,19 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>C6F8500C-D755-4BBC-90A1-19895777D69C</key>
+		<key>3141A027-C4A7-4025-9165-5A5656440A7D</key>
 		<dict>
 			<key>xpos</key>
-			<real>300</real>
+			<real>55</real>
 			<key>ypos</key>
-			<real>220</real>
+			<real>190</real>
 		</dict>
-		<key>EBA956F8-6D20-40F9-A598-6FB590F0D8EF</key>
+		<key>549474FD-7804-42C3-A292-DF5F23A685E4</key>
 		<dict>
 			<key>xpos</key>
-			<real>90</real>
+			<real>290</real>
 			<key>ypos</key>
-			<real>210</real>
+			<real>195</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>

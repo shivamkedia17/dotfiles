@@ -73,8 +73,11 @@ alias icld='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'
 alias dpcs='cd ~/Documents/dpcs-code'
 alias suban='cd ~/Documents/suban-code'
 alias lipika='cd ~/Documents/ai-lipika'
+alias cbio='cd ~/Documents/compbio'
+alias infoth='cd ~/Documents/infotheory'
 alias capstone='cd ~/projects/capstone'
 alias prj='cd ~/projects'
+alias websec='cd ~/Documents/web-sec'
 
 alias dpcsvm='ssh shivam.kedia_asp25@ics.ashoka.edu.in'
 
@@ -88,6 +91,8 @@ PATH="$(brew --prefix)/opt/python@3.11/libexec/bin:$PATH"
 
 PATH="$PATH:/Applications/kitty.app/Contents/MacOS:$HOME/.cargo/bin"
 PATH="$PATH:$HOME/.cargo/env"
+
+PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin"
 
 PATH="$PATH:/usr/local/smlnj/bin"
 PATH="$PATH:/Applications/Postgres.app/Contents/Versions/16/bin"
@@ -113,3 +118,16 @@ export TERM='xterm-256color'
 
 # Created by `pipx` on 2024-06-01 06:26:11
 export PATH="$PATH:/Users/shivoom/.local/bin"
+export PATH="/opt/homebrew/opt/dart@2.9/bin:$PATH"
+
+# bun completions
+[ -s "/Users/shivoom/.bun/_bun" ] && source "/Users/shivoom/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/shivoom/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
