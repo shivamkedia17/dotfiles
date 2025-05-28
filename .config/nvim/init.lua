@@ -99,14 +99,12 @@ require('mason').setup()
 
 local lsp_servers = {
     "clangd",
-    "cssls",
     "denols",
     "eslint",
     "html",
     "jsonls",
     "pyright", -- Changed from pylyzer to pyright
     "rust_analyzer",
-    "ts_ls",   -- Changed from ts_ls to tsserver
     "gopls",
 }
 
@@ -173,20 +171,6 @@ lspconfig.eslint.setup({
         packageManager = 'npm'
     },
     filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" }
-})
-
-lspconfig.ts_ls.setup({
-    root_dir = require('lspconfig').util.root_pattern("package.json", "tsconfig.json", "jsconfig.json"),
-    settings = {
-        javascript = {
-            suggestionActions = { enabled = false },
-            validate = true
-        },
-        typescript = {
-            suggestionActions = { enabled = false },
-            validate = true
-        }
-    }
 })
 
 -- JSON setup
