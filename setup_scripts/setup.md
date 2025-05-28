@@ -11,10 +11,8 @@
 	h. Shortcuts: Mouse Shortcuts: ^+Secondary Click -> Mission Control
 
 ## 2. basic utilities literally
-	a. Alfred: (use a crack)
-	b. karabiner: `https://karabiner-elements.pqrs.org`
-		1. remap esc to caps lock and vice versa
-	c. Homebrew
+	a. Alfred
+	b. karabiner
 
 ## 3. Safari settings
 	a. search engine: duckduckgo
@@ -28,35 +26,18 @@
 		iv. bitwarden
 
 ## 4. Extra Utilities
-	a. Monitor Control  `brew install --cask MonitorControl`
-	b. Hidden Bar  `brew install --cask `
-	c. AppCleaner (better way to uninstall) `brew install --cask AppCleaner`
-	d. QLMarkdown: `brew install --cask qlmarkdown`
-	e. Battery (battery utility): `brew install battery`
 	f. Amphetamine (from the app store)
-	g. Finicky (Default Browser for different things): `brew install finicky`
-	h. Tiles.app
 
 ## 5. Apps
-	a. kitty (terminal)
-	b. ms office apps
-	c. google drive plugin for mac
-	d. firefox
-	e. vscode
-	f. Bitwarden (password manager)
 	g. CollaNote
 
 ## 6. Fonts:
-	- Nerd Fonts (Droid Sans)
 	- Computer Modern (Latex Font)
 	- Product Sans (Google's Font)
 	```bash
 	```	
 ## 7. Programming Languages
-	- Python
-	- Rust
 
-## 7. What else?
 
 - Finder Settings: show downloads on new window, edit sidebar
 	- show status bar
