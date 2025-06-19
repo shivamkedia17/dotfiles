@@ -1,8 +1,8 @@
 #!/bin/bash
 
-sudo ./setup-dotfiles.sh
+./setup-dotfiles.sh
 sudo ./setup-shell.sh
-sudo zsh ./setup-installs.sh
+zsh ./setup-installs.sh
 
 # Setup Fonts
 

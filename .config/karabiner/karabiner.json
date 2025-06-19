@@ -254,11 +254,10 @@
                     "ignore": false,
                     "simple_modifications": [
                         {
-                            "from": { "key_code": "international6" },
+                            "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
                             "to": [{ "apple_vendor_keyboard_key_code": "language" }]
                         }
-                    ],
-                    "treat_as_built_in_keyboard": true
+                    ]
                 },
                 {
                     "identifiers": {

@@ -79,8 +79,6 @@ alias capstone='cd ~/projects/capstone'
 alias prj='cd ~/projects'
 alias websec='cd ~/Documents/web-sec'
 
-alias dpcsvm='ssh shivam.kedia_asp25@ics.ashoka.edu.in'
-
 #----------------------------------------
 
 ### PATH
@@ -116,10 +114,6 @@ ssh-add ~/.ssh/droplet
 
 export TERM='xterm-256color'
 
-# Created by `pipx` on 2024-06-01 06:26:11
-export PATH="$PATH:/Users/shivoom/.local/bin"
-export PATH="/opt/homebrew/opt/dart@2.9/bin:$PATH"
-
 # bun completions
 [ -s "/Users/shivoom/.bun/_bun" ] && source "/Users/shivoom/.bun/_bun"
 
@@ -130,4 +124,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 fpath=(/Users/shivoom/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
+#
 # End of Docker CLI completions

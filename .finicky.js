@@ -7,11 +7,11 @@ module.exports = {
                 {
                 	match: ({ url }) => url.host.endsWith("notion.so") || url.host.endsWith("whatsapp.com")|| url.host.endsWith("typst.app"),
                 	browser: {
-                		name: "Orion",
+                		name: "Safari",
                 	},
                 },
                 {
-                        match: ({ url }) => url.host.endsWith("openai.com"),
+                        match: ({ url }) => url.host.endsWith("openai.com") || url.host.endsWith("chatgpt.com"),
                         browser: {
                                 name: "/Applications/DuckDuckGo.app",
                                 appType: "appPath",

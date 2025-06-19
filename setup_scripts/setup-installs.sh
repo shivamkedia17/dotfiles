@@ -9,7 +9,7 @@ fi
 
 
 # install the followings casks (apps)
-casks=(battery tiles qlmarkdown syntax-highlight monitorcontrol hiddenbar finicky appcleaner font-sf-mono font-sf-pro font-iosevka font-computer-modern kitty firefox chromium spotify docker zed temurin google-drive docker zoom wireshark iina)
+casks=(battery tiles qlmarkdown syntax-highlight monitorcontrol hiddenbar finicky appcleaner font-sf-mono font-sf-pro font-iosevka font-computer-modern kitty firefox chromium spotify zed obsidian temurin google-drive docker zoom wireshark iina)
 
 for cask in "${casks[@]}"
 do
@@ -18,7 +18,7 @@ done
 
 
 # install the following formulae and dependencies
-formulae=(nmap tldr tree rustup golang python3 typst) 
+formulae=(nmap tldr tree nvim gcc gdb rustup golang python3 typst) 
 for f in "${formulae[@]}"
 do
     brew install $f;
